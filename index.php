@@ -1,0 +1,1 @@
+<?php header( 'Location: http://notes.thejungleblog.com/home.php' ); ?>

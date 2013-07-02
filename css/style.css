@@ -1,0 +1,238 @@
+/*  -- Styling TODO List --
+
+- better registration page
+
+*/
+
+body { 
+	/*background: #fff4db;*/
+	background-image: url(../images/background.png);
+	background-repeat: repeat-x;
+	background-color: #67C7EF;
+	margin: 0;
+}
+
+
+/* -- Title Bar -- */
+
+#title-bar {
+    height: 1.5em;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+	background-image: url(../images/links_title_bg.png);
+	background-position: left top;
+    padding-top: 5px;
+    border-bottom: 1px solid gray;
+}
+
+#title-bar-title {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+	font-style: bold;
+}
+	
+#title-bar-menu {
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+/* -- End Title Bar -- */
+
+
+/* -- Login and Registration -- */
+
+.round {
+	border-radius: 0.3125em; /* 5/16 */
+	-moz-border-radius: 0.3125em; /* 5/16 */
+	-webkit-border-radius: 0.3125em; /* 5/16 */
+}
+
+fieldset, img {	border: 0; }
+
+a { text-decoration: none; }
+
+p {
+	margin-bottom: 1.25em; /* 20/16 */
+	color: #9498a1;
+}
+
+form {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	line-height: 1.125em; /* 18/16 */
+}
+
+form p input[type="text"], form p input[type="password"], {
+  font-size: 1em;
+}
+
+a { color: #2069b4; }
+a:hover { color: #2a2e36; }
+
+p a, p a:hover { border-bottom: 1px dotted; }
+
+
+.blue {
+	background-color: #2069b4;
+	color: white;
+}
+
+.blue:hover {
+  background-color: #5081b3;
+	color: white;
+}
+
+.full-width-input { width: 95%; }
+
+.button {
+	padding: 0.833em; /* 10/12 */
+	display: inline-block;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	border: 0;
+}
+
+.image-right {
+	padding: 1em 2em;
+}
+
+form label {
+	display: block;
+	text-transform: uppercase;
+	color: #2a2e36;
+	margin: 0 0 0.3125em 0;
+}
+
+form input[type="text"], input[type="password"] {
+	border: 1px solid #d9dbdd;
+	padding: 1em 0.625em; /* 16/16 10/16 */
+	outline: none;
+}
+
+form input[type="text"]:hover, input[type="password"]:hover, textarea:hover,
+form input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+  border: 1px solid #bbbdbe;
+}
+
+form p em {
+	margin-top: 0.833em; /* 10/12 */
+	display: block;
+}
+
+div#login-panel, 
+div#register-panel {
+	margin-top: 10%;
+}
+
+form#login-form,
+form#register-form {
+	width: 18.75em; /* 300/16 */
+	margin: 0 auto;
+}
+
+.remember {
+  text-transform: lowercase;
+  font-size: 0.8em;
+}
+
+#content {
+	margin-top: 1em;
+  	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* -- Note Navigation Menu -- */
+
+.left {
+	float: left;
+	border: 1px solid #AAA;
+	background-color: white;
+}
+
+.left #nav-holder-sub {
+	width: 236px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.left .title-top {
+	height: 1.5em;
+	padding: 6px 0px 0px 6px;
+	font-size: 16px;
+	font-style: bold;
+	background-image: url(../images/links_title_bg.png);
+	background-position: left top;
+}
+
+#content .left #nav-sub ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	/* used to avoid 'click' events from being fired when an item is reordered */
+	helper: 'clone';
+}
+
+#content .left #nav-sub ul li a {
+	display: block;
+	padding: 5px 8px;
+	color: black;
+	text-decoration: none;
+	height: 17px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#content .left #nav-sub ul li a:hover,
+#content .left #nav-sub ul li a.selected,
+#content .left #nav-sub ul li.notename-selected a
+{
+	background-color: #CCC;
+}
+
+/* -- End Nav -- */
+
+/* -- Note Area -- */
+
+#note-data {
+	margin-left: 250px;
+	border: 1px solid #AAA;
+	width: 50%;
+	min-width: 300px;
+	max-width: 1000px;
+	background-color: white;
+	padding: 2em;
+}
+
+#note-title {
+	height: 2em;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-left: 2px;
+	font-size: 18px;
+}
+
+#note-area {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width: 100%;
+}
+
+#note-area-info {
+	font-style: italic; 
+	font-size: 80%;
+}
+
+#save-button,
+#delete-button
+{
+	padding: 0.5em;
+	width: 4em;
+}
+
+/* -- End Note Area -- */
